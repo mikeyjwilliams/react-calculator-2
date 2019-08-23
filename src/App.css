@@ -92,6 +92,11 @@
     width: 19%;
 }
 
+.operators-btn {
+    background-color: #00B4E1;
+    padding: 20px 30px;
+}
+
 .test {
     border: 1px solid black;
 }
