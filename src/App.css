@@ -1,4 +1,8 @@
 
+/**************** ***********************************************************/
+/*** 
+
+***/
 .container {
     max-width: 400px;
     background-color: #C21A37;
@@ -28,19 +32,26 @@
     color: white;
     font-size: 2.4rem;
     font-weight: 500;
-    direction: rtl;
-    
-
+    direction: rtl;  /*** puts texts displaying right to left on screen. ***/
 }
-.item-container {
+
+/***** Button Container --------------
+   - container for holding operators && Numbers
+****************************************************************************************/
+.specials-numbers-wrapper {
     display: inline-flex;
     width: 80%;
     
 }
 
-.box {
+.specials-nums-container {
     width: 100%;
 }
+/*** end containers ***********/
+
+/******** BASE BUTTON --
+   - provides all of buttons similar traits to each buttons.
+****************************************************************************************/
 
 .btn {
     border-radius: 50%;
@@ -50,14 +61,19 @@
     margin-bottom: 10px;
 }
 
+/****************** END BASE BUTTONS ***************************************************/
 
-
+/*************************
+ specials buttons
+    - custom padding each with a child selctor
+    - the regular class is used for the background-color only.
+****************************************************************************************/
 .specials-btn {
-    background-color: #0062AB;
-    
+    background-color: #0062AB;  
 }
 
-.specials-btn:first-child {
+/** custom padding each of the 3 buttons in specials with 1st-child, nth-child, & last-child. **/
+.specials-btn:first-child { 
     padding: 20px 30px;
 }
 
@@ -68,11 +84,12 @@
 .specials-btn:last-child {
     padding: 18px 25px;
 }
+/*************************** END Specials buttons **************************************/
 
-
-/* nth-child(9) of numbers for extra wide button */
-
-.numbers-btn {
+/*************************** 
+    Numbers Button Section
+****************************************************************************************/
+.numbers-btn { /** All Numbers EXCEPT last-Child button **/
     background-color: #003F75;
     padding: 20px 30px;
 }
@@ -80,6 +97,11 @@
 .numbers-btn:last-child {
     padding: 18px 33px;
 }
+/*************************** END Numbers Section ***************************************/
+
+/****************************
+    Operators Button Section
+****************************************************************************************/
 
 .operators {
     display: inline-flex;
@@ -92,19 +114,15 @@
     width: 19%;
 }
 
-.operators-btn {
+.operators-btn { /** All buttons EXCEPT -> 1st and 3rd of operators buttons. **/
     background-color: #00B4E1;
     padding: 20px 30px;
 }
 
-.operators-btn:first-child {
+.operators-btn:first-child { /** top button in operators **/
     padding: 21px 34px;
 }
 
-.operators-btn:nth-child(3) {
+.operators-btn:nth-child(3) { /**** 3rd button in operators - sign **/
     padding: 21px 34px;
-}
-
-.test {
-    border: 1px solid black;
 }
