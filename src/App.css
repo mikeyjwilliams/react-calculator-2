@@ -30,3 +30,13 @@
     direction: rtl;
 
 }
+
+.btn {
+    border-radius: 50%;
+    color: ghostwhite;
+    font-size: 1.9rem;
+}
+
+.specials {
+    background-color: #0062AB;
+}
