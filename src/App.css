@@ -32,14 +32,17 @@
     
 
 }
-
-.box {
-    width: 78%;
+.item-container {
+    display: inline-flex;
+    width: 80%;
     
 }
 
-.btn {
+.box {
+    width: 100%;
+}
 
+.btn {
     border-radius: 50%;
     color: ghostwhite;
     font-size: 2.3rem;
@@ -49,20 +52,20 @@
 
 
 
-.specials {
+.specials-btn {
     background-color: #0062AB;
     
 }
 
-.specials:first-child {
+.specials-btn:first-child {
     padding: 20px 30px;
 }
 
-.specials:nth-child(2) {
+.specials-btn:nth-child(2) {
     padding: 6%;
 }
 
-.specials:last-child {
+.specials-btn:last-child {
     padding: 18px 25px;
 }
 
@@ -76,4 +79,19 @@
 
 .numbers:last-child {
     padding: 18px 33px;
+}
+
+.operators {
+    display: inline-flex;
+    width: 19%;
+
+}
+
+.operations-side {
+    display: inline-flex;
+    width: 19%;
+}
+
+.test {
+    border: 1px solid black;
 }
