@@ -94,6 +94,15 @@
     padding: 20px 30px;
 }
 
+.numbers-btn:nth-child(10) {
+    border-top-right-radius: 55px;
+    border-bottom-right-radius: 55px;
+    border-top-left-radius: 55px;
+    border-bottom-left-radius: 55px;
+    width: 50%;
+    
+}
+
 .numbers-btn:last-child {
     padding: 18px 33px;
 }
