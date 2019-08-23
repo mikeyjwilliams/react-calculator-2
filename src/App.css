@@ -97,6 +97,14 @@
     padding: 20px 30px;
 }
 
+.operators-btn:first-child {
+    padding: 21px 34px;
+}
+
+.operators-btn:nth-child(3) {
+    padding: 21px 34px;
+}
+
 .test {
     border: 1px solid black;
 }
