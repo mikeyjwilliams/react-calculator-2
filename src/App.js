@@ -25,6 +25,9 @@ function App() {
           <Specials />
           <Numbers />
         </div>
+        <div className="operations-side">
+          {/* operations component goes here */}
+        </div>
       </div>
     </div>
   );
