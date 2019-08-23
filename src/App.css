@@ -72,12 +72,12 @@
 
 /* nth-child(9) of numbers for extra wide button */
 
-.numbers {
+.numbers-btn {
     background-color: #003F75;
     padding: 20px 30px;
 }
 
-.numbers:last-child {
+.numbers-btn:last-child {
     padding: 18px 33px;
 }
 
