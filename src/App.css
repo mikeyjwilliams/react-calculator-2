@@ -135,3 +135,7 @@
 .operators-btn:nth-child(3) { /**** 3rd button in operators - sign **/
     padding: 21px 34px;
 }
+
+.test {
+    border: 1px solid black;
+}
