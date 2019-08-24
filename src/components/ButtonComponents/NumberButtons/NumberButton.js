@@ -1,13 +1,20 @@
 import React from 'react';
 
-const NumberButton = (props) => {
-	const { number } = props;
+const NumberButton = props => {
+  const { number, setDisplayState } = props;
 
-	const normalButtonClasses = `btn numbers-btn`;
-	return (
-		<>
-			<button className={normalButtonClasses}>{number}</button>
-		</>
-	);
+  const normalButtonClasses = `btn numbers-btn`;
+
+  const numberDisplay = () => {
+    setDisplayState(number);
+  };
+
+  return (
+    <>
+      <button onClick={numberDisplay} className={normalButtonClasses}>
+        {number}
+      </button>
+    </>
+  );
 };
 export default NumberButton;
