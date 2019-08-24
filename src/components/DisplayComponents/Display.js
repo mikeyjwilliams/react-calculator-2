@@ -1,5 +1,12 @@
-import React from "react";
+import React from 'react';
 
-const Display = () => {
-  return <div>{/* Display any props data here */}</div>;
+const Display = props => {
+  const { displayState } = props;
+  return (
+    <div className="display-container">
+      <div className="display">{displayState}</div>
+    </div>
+  );
 };
+
+export default Display;
