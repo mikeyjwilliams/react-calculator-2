@@ -33,6 +33,7 @@
     font-size: 2.4rem;
     font-weight: 500;
     direction: rtl;  /*** puts texts displaying right to left on screen. ***/
+    padding-right: 30px;
 }
 
 /***** Button Container --------------
