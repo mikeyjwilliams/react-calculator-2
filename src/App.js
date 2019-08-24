@@ -31,7 +31,7 @@ function App() {
           </div>
         </div>
         <div className="operations-side">
-          <Operators />
+          <Operators setDisplayState={setDisplayState} />
         </div>
       </div>
     </div>
