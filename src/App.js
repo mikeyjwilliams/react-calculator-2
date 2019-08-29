@@ -11,17 +11,17 @@ import Numbers from './components/ButtonComponents/NumberButtons/Numbers';
 import Operators from './components/ButtonComponents/OperatorButtons/Operators';
 
 function App() {
-  const [displayValue, setDisplayValue] = useState('0');
+  const [displayValue, setDisplayValue] = useState('');
 
   const displayText = number => {
     setDisplayValue(number);
   };
 
-  const addNumber = (number, operator) => {
+  const addNumber = number => {
     if (number === '=') {
-      setDisplayValue(eval(number => number + operator));
+      setDisplayValue(eval(displayValue => number + displayValue));
     } else {
-      setDisplayValue(number => number + operator + number);
+      setDisplayValue(displayValue => number + displayValue);
     }
   };
 
@@ -32,7 +32,7 @@ function App() {
         <Display displayValue={displayValue} />
         <div>
           <Specials />
-          <Numbers displayText={displayText} />
+          <Numbers addNumber={addNumber} />
         </div>
         <div>
           <Operators />

@@ -1,12 +1,12 @@
 import React from 'react';
 
 const NumberButton = props => {
-  const { text, displayText } = props;
+  const { text, addNumber } = props;
   return (
     <>
       <button
         onClick={() => {
-          displayText(text);
+          addNumber(text);
         }}
       >
         {text}

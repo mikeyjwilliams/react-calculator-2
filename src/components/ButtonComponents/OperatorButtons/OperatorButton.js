@@ -1,12 +1,18 @@
 import React from 'react';
 
 const OperatorButton = props => {
-  const { operations } = props;
+  const { operations, addNumber } = props;
   const operatorChar = operations.char;
   const operatorValue = operations.value;
   return (
     <>
-      <button>{operatorChar}</button>
+      <button
+        onClick={() => {
+          addNumber(operatorValue);
+        }}
+      >
+        {operatorChar}
+      </button>
     </>
   );
 };
