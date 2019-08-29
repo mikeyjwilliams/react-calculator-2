@@ -5,6 +5,8 @@ import './App.scss';
 
 // Logo has already been provided for you. Do the same for the remaining components
 import Logo from './components/DisplayComponents/Logo';
+import Specials from './components/ButtonComponents/SpecialButtons/Specials';
+import Numbers from './components/ButtonComponents/NumberButtons/Numbers';
 
 function App() {
 	// STEP 5 - After you get the components displaying using the provided data file, write your state hooks here.
@@ -17,7 +19,10 @@ function App() {
 		<div className="container">
 			<Logo />
 			<div className="App">
-				{/* STEP 4 - Render your components here and be sure to properly import/export all files */}
+				<div>
+					<Specials />
+					<Numbers />
+				</div>
 			</div>
 		</div>
 	);
