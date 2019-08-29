@@ -6,15 +6,15 @@ import Specialbutton from './SpecialButton';
 import { specials } from '../../../data';
 
 const Specials = () => {
-	// STEP 2 - add the imported data to state
-	const [specialDatas, setSpecialDatas] = useState(specials);
-	return (
-		<div>
-			{specialDatas.map((specialBtn) => {
-				return <Specialbutton specialBtn={specialBtn} />;
-			})}
-		</div>
-	);
+  // STEP 2 - add the imported data to state
+  const [specialDatas, setSpecialDatas] = useState(specials);
+  return (
+    <div>
+      {specialDatas.map((specialBtn, i) => {
+        return <Specialbutton specialBtn={specialBtn} key={i} />;
+      })}
+    </div>
+  );
 };
 
 export default Specials;
